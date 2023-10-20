@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "inquirer": "^9.2.11"
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.2.11",
+    "xmlbuilder": "^15.1.1"
   }
 }
