@@ -27,5 +27,10 @@ const logoQuestions = [
     }
 ];
 
+// Inquierer to prompt the user for input
+inquierer.prompt(logoQuestions).then((answers) => {
+    const {text, textColor, shape, shapeColor} = answers;
+}) 
+
 
 
