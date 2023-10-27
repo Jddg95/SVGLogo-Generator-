@@ -4,19 +4,24 @@ const inquirer = require('inquirer'); // Use require to import inquirer
 // Import the questions from questions.js
 const askLogoQuestions = require('./lib/questions');
 
+class Shape {
+  constructor(color) {
+    this.color = color;
+  }
+}
 // Define the classes for Triangle, Square, and Circle, or import them if necessary
-class Triangle  extends Shape {
+class Triangle extends Shape{
     render() {
         // return polygon with color input
         return `<polygon points="150, 18 244, 182 56, 182" fill="${this.color}" />`;
     } 
 } // Define or render Triangle
-class Square  extends Shape {
+class Square extends Shape{
     render() {
         return `<rect x="73" y="40" width="160" height="160" fill="${this.color}" />`;
     }
 } // Define or import Square
-class Circle  extends Shape {
+class Circle extends Shape{
     render() {
         return `<circle cx="150" cy="115" r="80" fill="${this.color}" />`;
     }
@@ -27,7 +32,7 @@ function generateSVGFile(fileName, answers) {
   let svgString = "";
 
   // Set the width and height of the SVG container
-  svgString = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
+  svgString += '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
 
   // Use the '<g>' tag to wrap the shape, ensuring that the user's font input appears on top of the polygon, not behind it
   svgString += "<g>";
@@ -65,11 +70,12 @@ function generateSVGFile(fileName, answers) {
 
 // Function that utilizes inquirer prompts to collect user input via the command line
 function promptUser() {
-  inquirer
-    .prompt(askLogoQuestions)
+  console.log()
+  return inquirer
+    .prompt(askLogoQuestions.questions)
     .then((answers) => {
       // Handle an error if the text input is longer than three characters
-      if (answers.text.length > 3) {
+      if (answers.length > 3) {
         console.log("Please enter a value of three characters or less.");
         promptUser();
       } else {
@@ -77,7 +83,7 @@ function promptUser() {
         generateSVGFile("logo.svg", answers);
       }
     });
-}
+  }
 
 // Initiate the promptUser function to start the inquirer prompts when the application is run
 promptUser();
