@@ -44,6 +44,10 @@ Your experience with this application will be smooth and efficient, allowing you
   - [How It Works](#how-it-works)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
+  - [Usage](#usage)
+  - [LICENSE](#license)
+  - [TESTS](#tests)
+  - [Contact](#contact)
 ## Installation
 
 To get started with the SVG Logo Maker, please follow these steps:
@@ -78,4 +82,41 @@ To get started with the SVG Logo Maker, please follow these steps:
 - You are now ready to run the SVG Logo Maker and start creating your custom SVG logos.
 - Make sure to refer to the Usage section for instructions on how to use the application.
 
-##Usage 
+## Usage 
+
+**1. Run the application by tapping the following command:** 
+    
+    ```sh
+    node index.js
+
+You will be asked a series of questions to customize your logo.
+
+**2. Answer the following prompts:** 
+
+- Enter up to three characters for the text.
+- Enter a color keyword or a hexadecimal number for the text color.
+- Choose a shape from the list: circle, triangle, or square.
+- Enter a color keyword or a hexadecimal number for the shape's color.
+
+**3. If you entered the valid input for all prompts, an SVG file named `logo.svg` will be generated.  You will see the message "Generated logo.svg" printed in the command line.**
+
+**4.Open the logo.svg file in a web browser to view your customized logo, which will be a 300x200 pixel image that matches your criteria.**
+
+## LICENSE 
+
+[MIT License](https://opensource.org/licenses/MIT)
+
+## TESTS
+
+
+- Each shape class (Circle, Square, and Triangle) is tested for a render() method that returns a string for the corresponding SVG file matching color and text requests. To run the tests using Jest, type the following command:
+
+    ```sh
+    npm test 
+
+## Contact 
+
+- Email: jddgarcia95@gmail.com
+- -LinkedIn: []
+- Portfolio: []
+- Github: http://github.com/jddg95
