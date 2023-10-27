@@ -12,9 +12,9 @@
 
 Generate an SVG logo with your choice of shape (circle, square, or triangle), shape color, text (limit of 3 characters), and text color. Shape and text colors can be chosen using color keywords or hexadecimal numbers.
 
-Watch a [video](https://drive.google.com/file/d/1A2VQhiCqFQlFh11n5yiMDAyEuMMRMyon/view?usp=sharing) demonstration of the basic functionality:
+Watch a [video]  demonstration of the basic functionality:
 
-[SVG Logo Maker Demo](https://user-images.githubusercontent.com/116515976/230991714-bffc14be-c289-4ec2-b1bc-3bfb1ae13cfe.mov)
+[SVG Logo Maker Demo]
 
 ## How It Works
 
@@ -45,8 +45,8 @@ Your experience with this application will be smooth and efficient, allowing you
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [LICENSE](#license)
-  - [TESTS](#tests)
+  - [License](#license)
+  - [Tests](#tests)
   - [Contact](#contact)
 ## Installation
 
@@ -102,11 +102,11 @@ You will be asked a series of questions to customize your logo.
 
 **4.Open the logo.svg file in a web browser to view your customized logo, which will be a 300x200 pixel image that matches your criteria.**
 
-## LICENSE 
+## License 
 
 [MIT License](https://opensource.org/licenses/MIT)
 
-## TESTS
+## Tests
 
 
 - Each shape class (Circle, Square, and Triangle) is tested for a render() method that returns a string for the corresponding SVG file matching color and text requests. To run the tests using Jest, type the following command:
