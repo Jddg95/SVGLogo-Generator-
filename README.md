@@ -12,9 +12,8 @@
 
 Generate an SVG logo with your choice of shape (circle, square, or triangle), shape color, text (limit of 3 characters), and text color. Shape and text colors can be chosen using color keywords or hexadecimal numbers.
 
-Watch a [video]  demonstration of the basic functionality:
+Watch a [video](https://drive.google.com/file/d/17gLsPP6ve9x_xkkcTtOd7A37XkKMu2XV/view) demonstration of the basic functionality. 
 
-[SVG Logo Maker Demo]
 
 ## How It Works
 
